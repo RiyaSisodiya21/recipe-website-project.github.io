@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add your Recipe Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="foodlogo.png" alt="" />
+    </div>
+    <div class="main">
+        <form>
+        <div class="register">
+            <h2>Add Recipe Here</h2>
+            <form id="register" method="post"></form>
+            <label>First name :</label>
+            <br>
+            <input type="text" name="fname" id="name" placeholder="Enter your first name">
+            <br><br>
+            <label>Last name :</label>
+            <br>
+            <input type="text" name="lname" id="name" placeholder="Enter your last name">
+            <br><br>
+            <label>Email :</label>
+            <br>
+            <input type="text" name="ename" id="name" placeholder="Enter your valid Email">
+            <br><br>
+            <label>Your Recipe name :</label>
+            <br>
+            <input type="text" name="rname" id="name" placeholder="Enter your recipe name">
+            <br><br>
+            <label>Instructions to cook the recipe :</label>
+            <br>
+            <input type="text" name="iname" id="name" placeholder="Enter the instructions(or steps) to cook your recipe">
+            <br><br>
+            <label>Link of the video :</label>
+            <br>
+            <input type="text" name="yname" id="name" placeholder="Enter the link of video tutorial to make the recipe">
+            <br><br>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="course" id="foodcourse">
+            &nbsp;
+            <span id="juice">Juice</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="course" id="foodcourse">
+            <span id="starter">Starter</span>
+            &nbsp;
+            <input type="radio" name="course" id="foodcourse">
+            <span id="maincourse">Main Course</span>
+            &nbsp;
+            <input type="radio" name="course" id="foodcourse">
+            <span id="desserts">Desserts</span>
+            &nbsp;
+            <br><br>
+            <input type="submit" value="submit" name="submit" id="submit">
+        </div>
+        <div>
+         <a href="action_page.html">Click here!</a>
+        </div>
+        </form>
+    </div>
+<script>
+    let preloader = document.getElementById("loading");
+    function myFunction() {
+        preloader.style.display = "none";
+    }
+</script>
+</body>
+</html>
